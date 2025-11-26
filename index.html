@@ -79,7 +79,7 @@ div.vertical {
 
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-
+	<script type="text/javascript" src="session.js"></script>
 
 	 <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
 
@@ -97,13 +97,13 @@ div.vertical {
 			url : url,
 			dataType : "html",
 			success : function(data) {
-
+				setWithExpiry("pass_code",hash,30)
 				window.location= url;
 
 			},
 			error : function(xhr, ajaxOptions, thrownError) {
 
-
+				localStorage.clear();
 				parent.location.hash= hash;
 
 				//$("#wrongPassword").show();
