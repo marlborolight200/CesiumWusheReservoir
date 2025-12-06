@@ -1,32 +1,29 @@
 <html>
+  <head>
+    <script src="CesiumWusheReservoir/cesium-package/Cesium.js"></script>
 
-<head>
-  <script src="CesiumWusheReservoir/cesium-package/Cesium.js"></script>
-
-  <meta charset="UTF-8" />
-  <link rel="icon" href="./DamICON.ico" />
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>霧社水庫3D</title>
-  <script type="module" crossorigin src="./assets/index-HrhItTyy.js"></script>
-  <script type="text/javascript" src="../session.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-1Zn6uvwc.css">
-</head>
-
-<body>
-  <script type="text/javascript">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./DamICON.ico" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>霧社水庫3D</title>
+    <script type="module" crossorigin src="./assets/index-DG6bMISf.js"></script>
+    <script type="text/javascript" src="../session.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Bw82a9AS.css">
+  </head>
+  <body>
+    <script type="text/javascript">
     window.onload = function () {
-      let code = getWithExpiry("pass_code");
-      if (code == null) { permissonError(); }
-      if (!location.pathname.includes(code)) { permissonError; }
+      let code= getWithExpiry("pass_code");
+      if (code ==null) {permissonError();}
+      if (!location.pathname.includes(code)){permissonError;}
     };
 
-    function permissonError() {
-      location.href = "../";
+    function permissonError(){
+      location.href="../";
     }
   </script>
-  <div id="App" style="overflow-x: hidden;overflow-y: hidden;"></div>
+    <div id="App" style="overflow-x: hidden;overflow-y: hidden;"></div>
 
-</body>
-
+  </body>
 </html>
